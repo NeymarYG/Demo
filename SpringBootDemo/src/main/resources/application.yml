@@ -1,0 +1,28 @@
+jdbc:
+  driverClassName: com.mysql.jdbc.Driver
+  url: jdbc:mysql://localhost:3306/spring?characterEncoding=utf8
+  username: root
+  password: 980405
+
+#激活其他yml配置文件
+spring:
+  profiles:
+    active: abc,def
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/spring?characterEncoding=utf8
+    username: root
+    password: 980405
+
+#日志级别设置
+logging:
+  level:
+    com.guan: debug
+
+#mybatis的配置
+mybatis:
+  #日志
+#  configuration:
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  #实体类别名包路径
+  type-aliases-package: com.guan.pojo
