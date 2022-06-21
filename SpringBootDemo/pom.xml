@@ -50,7 +50,7 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>5.1.46</version>
+            <version>8.0.28</version>
         </dependency>
         <!--整合mybatis mybatis提供的依赖,spring并没有关于mybatis的依赖-->
         <dependency>
